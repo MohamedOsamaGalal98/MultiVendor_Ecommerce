@@ -1,0 +1,197 @@
+/* Logo positioning fix for header navbar alignment */
+
+/* Fix header layout and logo positioning */
+header {
+    display: flex !important;
+    align-items: center !important;
+    height: 90px !important;
+    padding: 10px 0px !important;
+    position: relative !important;
+}
+
+/* Ensure proper container layout */
+header .container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .row {
+    display: flex !important;
+    align-items: center !important;
+    width: 100%;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+header .row > [class*="col-"] {
+    display: flex;
+    align-items: center;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+/* Logo area positioning */
+.wsus_logo_area {
+    display: flex !important;
+    align-items: center !important;
+    height: 100%;
+    justify-content: flex-start;
+    margin-left: 70px;
+}
+
+.wsus__header_logo {
+    width: 100% !important;
+    max-width: 180px;
+    height: auto;
+    display: flex !important;
+    align-items: center !important;
+    line-height: normal !important;
+    margin-left: 10px;
+}
+
+.wsus__header_logo img {
+    max-height: 75px !important;
+    width: auto !important;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+/* Mobile menu area alignment */
+.wsus__mobile_menu_area {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.wsus__mobile_menu_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search area alignment */
+.wsus__search {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.wsus__search form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Call area alignment */
+.wsus__call_icon_area {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.wsus__call_area {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.wsus__call {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.wsus__call_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Icon area alignment */
+.wsus__icon_area {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    height: 100%;
+}
+
+.wsus__icon_area li {
+    display: flex;
+    align-items: center;
+}
+
+.wsus__icon_area li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Fix vertical alignment issues */
+header * {
+    vertical-align: middle;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 767.98px) {
+    header {
+        height: 70px !important;
+        padding: 5px 0px !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    
+    .wsus__header_logo {
+        max-width: 200px;
+        margin-left: 10px;
+        line-height: 60px !important;
+    }
+    
+    .wsus__header_logo img {
+        max-height: 200px !important;
+    }
+    
+    .wsus__call_icon_area {
+        padding-left: 10px;
+    }
+    
+    .wsus_logo_area {
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .wsus__header_logo {
+        max-width: 160px;
+    }
+    
+    .wsus__header_logo img {
+        max-height: 70px !important;
+    }
+}
+
+/* Ensure flexbox alignment for all screen sizes */
+@media (min-width: 992px) {
+    .wsus__header_logo {
+        max-width: 200px;
+    }
+    
+    .wsus__header_logo img {
+        max-height: 80px !important;
+    }
+}
+
+/* Override any conflicting styles */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .wsus__header_logo {
+        width: 100% !important;
+        max-width: 180px;
+    }
+}
